@@ -1465,195 +1465,9 @@ input, textarea, select {
   font-weight: 400;
 }
 
-/* ─── Feedback Item Footer (time + reply btn) ─── */
+/* ─── Feedback Item Footer ─── */
 .feedback-item-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
   margin-top: var(--space-sm);
-}
-
-/* ─── Reply Button ─── */
-.feedback-reply-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--color-text-tertiary);
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
-  border: 1px solid transparent;
-}
-
-.feedback-reply-btn:hover {
-  color: var(--color-accent);
-  background: var(--color-accent-dim);
-  border-color: rgba(0, 212, 255, 0.1);
-}
-
-.feedback-reply-btn svg {
-  flex-shrink: 0;
-  transition: transform 0.2s ease;
-}
-
-.feedback-reply-btn[aria-expanded="true"] svg {
-  transform: scaleX(-1);
-}
-
-/* ─── Replies Container ─── */
-.feedback-replies {
-  margin-top: var(--space-md);
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  animation: fadeSlideIn 0.25s ease;
-}
-
-.feedback-replies-loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-md);
-}
-
-/* ─── Individual Reply ─── */
-.feedback-reply-item {
-  padding: var(--space-sm) var(--space-sm) var(--space-sm) var(--space-md);
-  border-left: 2px solid var(--color-border-light);
-  margin-left: var(--space-xs);
-  animation: feedbackFadeIn 0.3s ease both;
-}
-
-.feedback-reply-item-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
-  margin-bottom: 4px;
-}
-
-.feedback-reply-item-name {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.feedback-reply-item-time {
-  font-size: 0.72rem;
-  color: var(--color-text-tertiary);
-  white-space: nowrap;
-}
-
-.feedback-reply-item-message {
-  font-size: 0.85rem;
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-  word-wrap: break-word;
-}
-
-/* ─── Reply Form ─── */
-.feedback-reply-form {
-  margin-top: var(--space-md);
-  padding: var(--space-md);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  animation: fadeSlideIn 0.25s ease;
-}
-
-.feedback-reply-form input,
-.feedback-reply-form textarea {
-  width: 100%;
-  padding: 10px 14px;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  color: var(--color-text);
-  font-size: 0.85rem;
-  transition: border-color var(--transition-fast);
-  outline: none;
-  font-family: inherit;
-}
-
-.feedback-reply-form input:focus,
-.feedback-reply-form textarea:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
-}
-
-.feedback-reply-form textarea {
-  resize: vertical;
-  min-height: 60px;
-}
-
-.feedback-reply-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.feedback-reply-submit {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 8px 18px;
-  border-radius: var(--radius-sm);
-  background: var(--color-accent);
-  color: #050B18;
-  border: 1px solid var(--color-accent);
-  transition: all var(--transition-base);
-  cursor: pointer;
-  font-family: inherit;
-}
-
-.feedback-reply-submit:hover {
-  background: var(--color-secondary);
-  border-color: var(--color-secondary);
-  box-shadow: 0 2px 12px rgba(0, 212, 255, 0.25);
-  transform: translateY(-1px);
-}
-
-.feedback-reply-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.feedback-reply-cancel {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--color-text-tertiary);
-  padding: 8px 14px;
-  border-radius: var(--radius-sm);
-  transition: all var(--transition-fast);
-  cursor: pointer;
-  font-family: inherit;
-  background: transparent;
-  border: 1px solid transparent;
-}
-
-.feedback-reply-cancel:hover {
-  color: var(--color-text);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.feedback-reply-form .feedback-msg {
-  margin-top: var(--space-sm);
-}
-
-.feedback-reply-form .feedback-reply-success,
-.feedback-reply-form .feedback-reply-error {
-  margin-top: 0;
 }
 
 /* ─── Feedback Empty State ─── */
@@ -2020,10 +1834,10 @@ input, textarea, select {
     background: rgba(5, 11, 24, 0.97);
     backdrop-filter: blur(20px);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: var(--space-sm);
-    padding: 80px 24px 40px;
+    padding: calc(var(--header-height) + var(--space-md)) 24px var(--space-3xl);
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-base);
