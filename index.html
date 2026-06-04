@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Day Tracker – Track Tasks. Build Streaks. Achieve Goals. A personal progress system that helps you become more consistent, productive, and intentional.">
+  <meta name="keywords" content="day tracker, task tracking, goal tracking, habit tracker, productivity, streaks, alarms, daily planner">
+  <meta name="author" content="VKS (Visionary Kraft Studio)">
+  <meta name="theme-color" content="#050B18">
+
+  <title>Day Tracker — Take Control Of Every Day</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Day Tracker – Take Control Of Every Day">
+  <meta property="og:description" content="Plan tasks, track goals, build streaks, earn rewards, and never miss what matters.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Day Tracker – Take Control Of Every Day">
+  <meta name="twitter:description" content="Plan tasks, track goals, build streaks, earn rewards, and never miss what matters.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/app_icon.png">
+  <link rel="apple-touch-icon" href="images/app_icon.png">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Day Tracker",
+    "applicationCategory": "Productivity",
+    "operatingSystem": "Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Plan tasks, track goals, build streaks, earn rewards, and never miss what matters."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- NAVIGATION                                   -->
+  <!-- ════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="Day Tracker home">
+        <img src="images/app_icon.png" alt="" class="nav-logo-icon" width="28" height="28" aria-hidden="true">
+        <span class="nav-logo-text">Day Tracker</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-links" role="list" data-nav-links>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#feedback" class="nav-link">Feedback</a></li>
+        <li><a href="#screenshots" class="nav-link">Screenshots</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-download-item">
+          <a href="#download" class="btn btn-primary nav-download-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ════════════════════════════════════════════ -->
+    <!-- HERO                                         -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge" aria-hidden="true">
+            <span class="hero-badge-dot"></span>
+            Personal Progress System
+          </div>
+
+          <h1 class="hero-title">
+            Take Control<br>
+            <span class="text-gradient">Of Every Day.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Plan tasks, track goals, build streaks, earn rewards, and never miss what matters.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary btn-lg hero-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download APK
+            </a>
+            <a href="#features" class="btn btn-ghost btn-lg">
+              Explore Features
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero-trust" role="list" aria-label="Trust indicators">
+            <li class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Works Offline
+            </li>
+            <li class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              No Account Required
+            </li>
+            <li class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Full-Screen Alarms
+            </li>
+            <li class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Free Download
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone-mockup hero-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen phone-screen-img">
+              <img src="images/loading page.png" alt="Day Tracker Dashboard" class="phone-screenshot" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="14" height="22" rx="7"/><circle cx="8" cy="8" r="2" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- FEATURES                                    -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Features</span>
+          <h2 class="section-title" id="features-title">Everything You Need To<br><span class="text-gradient">Stay On Track</span></h2>
+          <p class="section-desc">Built for consistency. Designed for results.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(0, 212, 255, 0.1); --icon-color: #00D4FF;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3 class="feature-title">Task Management</h3>
+            <p class="feature-desc">Organize daily tasks effortlessly. Check them off as you go and watch your progress grow.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(168, 85, 247, 0.1); --icon-color: #A855F7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="feature-title">Goal Tracking</h3>
+            <p class="feature-desc">Break big goals into manageable progress. Track what matters and see how far you've come.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(76, 201, 240, 0.1); --icon-color: #4CC9F0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3 class="feature-title">Full-Screen Alarms</h3>
+            <p class="feature-desc">Never miss important reminders. Alarms that demand your attention — even when locked.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(0, 212, 255, 0.08); --icon-color: #00D4FF;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </div>
+            <h3 class="feature-title">Bedtime Scheduling</h3>
+            <p class="feature-desc">Build healthy routines. Schedule your wind-down and wake-up times consistently.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(168, 85, 247, 0.08); --icon-color: #A855F7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3 class="feature-title">Streak Tracking</h3>
+            <p class="feature-desc">Stay motivated every day. Build momentum with visual streaks that keep you going.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(76, 201, 240, 0.08); --icon-color: #4CC9F0;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="feature-title">XP & Rewards</h3>
+            <p class="feature-desc">Progress feels rewarding. Earn XP, unlock achievements, and collect rewards as you grow.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(0, 212, 255, 0.08); --icon-color: #00D4FF;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h3 class="feature-title">Achievements</h3>
+            <p class="feature-desc">Unlock milestones. Every completed goal and streak earns you a badge of honor.</p>
+          </article>
+
+          <article class="feature-card" data-aos>
+            <div class="feature-icon" style="--icon-bg: rgba(168, 85, 247, 0.08); --icon-color: #A855F7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-6"/></svg>
+            </div>
+            <h3 class="feature-title">Profile Analytics</h3>
+            <p class="feature-desc">Understand your progress. Visual insights into your consistency, streaks, and growth over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- SCREENSHOTS                                 -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="showcase section" id="screenshots" aria-labelledby="showcase-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">App Preview</span>
+          <h2 class="section-title" id="showcase-title">Built For <span class="text-gradient">Every Part</span> Of Your Day</h2>
+          <p class="section-desc">A clean, intuitive interface designed for focus.</p>
+        </div>
+
+        <div class="showcase-carousel" role="region" aria-label="App screenshot carousel" data-carousel>
+          <div class="carousel-track" data-carousel-track>
+            <figure class="carousel-slide" data-carousel-slide>
+              <div class="phone-mockup showcase-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen phone-screen-img">
+                  <img src="images/main page.jpeg" alt="Day Tracker Dashboard screenshot" class="phone-screenshot" loading="lazy">
+                </div>
+              </div>
+              <figcaption class="carousel-caption">Dashboard — your daily progress at a glance</figcaption>
+            </figure>
+
+            <figure class="carousel-slide" data-carousel-slide>
+              <div class="phone-mockup showcase-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen phone-screen-img">
+                  <img src="images/goals page.jpeg" alt="Day Tracker Tasks screenshot" class="phone-screenshot" loading="lazy">
+                </div>
+              </div>
+              <figcaption class="carousel-caption">Goals — a complete roadmap to long-term success</figcaption>
+            </figure>
+
+            <figure class="carousel-slide" data-carousel-slide>
+              <div class="phone-mockup showcase-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen phone-screen-img">
+                  <img src="images/calendar.jpeg" alt="Day Tracker Goals screenshot" class="phone-screenshot" loading="lazy">
+                </div>
+              </div>
+              <figcaption class="carousel-caption">Calendar — organize every day with ease & clarity</figcaption>
+            </figure>
+
+            <figure class="carousel-slide" data-carousel-slide>
+              <div class="phone-mockup showcase-phone">
+                <div class="phone-notch"></div>
+                <div class="phone-screen phone-screen-img">
+                  <img src="images/permissions.jpeg" alt="Day Tracker Profile screenshot" class="phone-screenshot" loading="lazy">
+                </div>
+              </div>
+              <figcaption class="carousel-caption">Permissions — grant access for a seamless, powerful experience</figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" data-carousel-prev aria-label="Previous screenshot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-dots" data-carousel-dots></div>
+            <button class="carousel-btn carousel-next" data-carousel-next aria-label="Next screenshot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- ALARM RELIABILITY                           -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="alarms section" id="alarms" aria-labelledby="alarms-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Alarm System</span>
+          <h2 class="section-title" id="alarms-title">Alarms You Can <span class="text-gradient">Actually Trust</span></h2>
+          <p class="section-desc">Because missing an alarm shouldn't be an option.</p>
+        </div>
+
+        <div class="alarms-grid">
+          <article class="alarm-card" data-aos>
+            <div class="alarm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg>
+            </div>
+            <h3 class="alarm-title">Full-Screen Alarms</h3>
+            <p class="alarm-desc">When an alarm goes off, you see it. The entire screen lights up with your reminder — no swiping it away on accident.</p>
+          </article>
+
+          <article class="alarm-card" data-aos>
+            <div class="alarm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4CC9F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="alarm-title">Lock-Screen Alarms</h3>
+            <p class="alarm-desc">Even when your phone is locked, alarms break through. No silent failures. No missed reminders.</p>
+          </article>
+
+          <article class="alarm-card" data-aos>
+            <div class="alarm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="alarm-title">Alarm Rescheduling</h3>
+            <p class="alarm-desc">Need a few more minutes? Reschedule with one tap. Your routine stays intact, your reminders stay on track.</p>
+          </article>
+
+          <article class="alarm-card" data-aos>
+            <div class="alarm-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="alarm-title">Bedtime Scheduling</h3>
+            <p class="alarm-desc">Set consistent sleep and wake times. Your body thrives on routine — let Day Tracker help you keep it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- WHY DAY TRACKER (single comparison table)   -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="comparison section" id="why" aria-labelledby="comparison-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Day Tracker</span>
+          <h2 class="section-title" id="comparison-title">Life Before & After <span class="text-gradient">Day Tracker</span></h2>
+          <p class="section-desc">Small changes. Big results.</p>
+        </div>
+
+        <div class="compare-card" data-aos>
+          <div class="compare-headers">
+            <span class="compare-label without">Without</span>
+            <span class="compare-vs" aria-hidden="true">→</span>
+            <span class="compare-label with">With</span>
+          </div>
+          <div class="compare-rows">
+            <div class="compare-row">
+              <span class="compare-before">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Missed tasks
+              </span>
+              <span class="compare-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+              <span class="compare-after">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Consistent routines
+              </span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-before">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Broken habits
+              </span>
+              <span class="compare-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+              <span class="compare-after">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Clear goals
+              </span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-before">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Lost momentum
+              </span>
+              <span class="compare-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+              <span class="compare-after">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Reliable reminders
+              </span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-before">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Poor planning
+              </span>
+              <span class="compare-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+              <span class="compare-after">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Visible progress
+              </span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-before"></span>
+              <span class="compare-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12 19 12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </span>
+              <span class="compare-after">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                More productivity
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- FAQ                                         -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title" id="faq-title">Questions? <span class="text-gradient">We've Got Answers</span></h2>
+          <p class="section-desc">The things people usually ask.</p>
+        </div>
+
+        <div class="faq-list" role="list">
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Is it free?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Day Tracker is completely free. No subscriptions, no hidden costs, no premium tiers. Just download and start tracking.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Does it work offline?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. Day Tracker is built offline-first. Everything works without an internet connection — tasks, goals, alarms, streaks. Your data stays on your device.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Do alarms work when the phone is locked?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Alarms ring full-screen even when your phone is locked. We built the alarm system to be reliable — so you never miss what matters.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Do I need an account?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Not at all. Day Tracker requires no account, no sign-up, no email. Just download and start using it. Your data stays on your device.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Can I use goals and tasks together?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Tasks and goals work hand in hand. Break your goals into daily tasks, track progress on both, and see how small steps lead to big achievements.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-aos>
+            <summary class="faq-question">
+              Can I reschedule alarms?
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. With one tap, you can snooze or reschedule any alarm. Your routine stays flexible without falling apart.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- COMMUNITY FEEDBACK                          -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="feedback section" id="feedback" aria-labelledby="feedback-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Community Feedback</span>
+          <h2 class="section-title" id="feedback-title">What Users <span class="text-gradient">Are Saying</span></h2>
+          <p class="section-desc">Share your experience and help shape Day Tracker.</p>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-card feedback-form-card" data-aos>
+          <h3 class="feedback-form-title">Share Your Feedback</h3>
+          <form class="feedback-form" data-feedback-form>
+            <div class="feedback-field">
+              <label for="feedback-name" class="sr-only">Your Name</label>
+              <input type="text" id="feedback-name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="feedback-field">
+              <label class="feedback-label">Rating</label>
+              <div class="star-input" data-star-input>
+                <input type="radio" name="rating" value="5" id="star5">
+                <label for="star5" class="star-label" title="5 stars">★</label>
+                <input type="radio" name="rating" value="4" id="star4">
+                <label for="star4" class="star-label" title="4 stars">★</label>
+                <input type="radio" name="rating" value="3" id="star3">
+                <label for="star3" class="star-label" title="3 stars">★</label>
+                <input type="radio" name="rating" value="2" id="star2">
+                <label for="star2" class="star-label" title="2 stars">★</label>
+                <input type="radio" name="rating" value="1" id="star1" required>
+                <label for="star1" class="star-label" title="1 star">★</label>
+              </div>
+            </div>
+            <div class="feedback-field">
+              <label for="feedback-message" class="sr-only">Your Message</label>
+              <textarea id="feedback-message" name="message" rows="4" placeholder="Tell us about your experience..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary feedback-submit">
+              Submit Feedback
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polyline points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="feedback-msg feedback-success" data-feedback-success hidden>✓ Thank you! Your feedback has been submitted.</p>
+            <p class="feedback-msg feedback-error" data-feedback-error hidden>⚠ Something went wrong. Please try again.</p>
+          </form>
+        </div>
+
+        <!-- Feedback Feed -->
+        <div class="feedback-feed" data-aos>
+          <div class="feedback-feed-header">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <h3 class="feedback-feed-title">Recent Feedback</h3>
+          </div>
+          <div class="feedback-list" data-feedback-list>
+            <div class="feedback-loading" data-feedback-loading>
+              <div class="spinner"></div>
+              <span>Loading feedback...</span>
+            </div>
+          </div>
+          <div class="feedback-empty" data-feedback-empty hidden>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <p>No feedback yet. Be the first to share!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════ -->
+    <!-- DOWNLOAD CTA                                -->
+    <!-- ════════════════════════════════════════════ -->
+    <section class="download section" id="download" aria-labelledby="download-title">
+      <div class="container">
+        <div class="download-card" data-aos>
+          <div class="download-glow" aria-hidden="true"></div>
+          <div class="download-content">
+            <span class="section-label download-label">Get Started</span>
+            <h2 class="download-title" id="download-title">Ready To Take Control?</h2>
+            <p class="download-subtitle">Start building consistency today.</p>
+            <a href="Day Tracker v-1.apk" class="btn btn-primary btn-lg download-btn" data-apk-download>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Day Tracker APK
+            </a>
+            <ul class="download-features" role="list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Free
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Works Offline
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                No Account Required
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- FOOTER                                      -->
+  <!-- ════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo" aria-label="Day Tracker home">
+          <img src="images/app_icon.png" alt="" class="footer-logo-icon" width="28" height="28" aria-hidden="true">
+          Day Tracker
+        </a>
+        <p class="footer-desc">A personal progress system by <a href="#" class="footer-link">VKS (Visionary Kraft Studio)</a>. Built with care for people who want to show up every day.</p>
+        <p class="footer-made">Made with <span aria-label="love">💜</span> by <span class="footer-vks">VKS</span></p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Links</h4>
+          <ul role="list">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#screenshots" class="footer-link">Screenshots</a></li>
+            <li><a href="#download" class="footer-link">Download</a></li>
+            <li><a href="#feedback" class="footer-link">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul role="list">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 VKS (Visionary Kraft Studio). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="scroll-top" data-scroll-top aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
